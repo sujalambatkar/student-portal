@@ -47,7 +47,7 @@ export default function RegisterPage() {
     setServerError("");
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/register", {
+      const res = await fetch("https://student-portal-backend-n5e6.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, course_ids: selectedCourses }),
